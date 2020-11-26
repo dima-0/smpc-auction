@@ -1,2 +1,1 @@
-# smpc-auction
-Bachelor-Projekt (TH-Lübeck, WS20/21)
+Das Projekt enthält eine prototypische Implementierung der Online-Auktion-App, welche im Rahmen der Bachelorarbeit _Realisierung von Secure Multiparty Computation (Android Plattform)_ konzipiert wurde.
