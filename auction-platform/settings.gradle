@@ -1,0 +1,6 @@
+rootProject.name = 'auction-platform'
+
+include(":fresco-auction")
+project(":fresco-auction").setProjectDir(new File("../fresco-auction"))
+
+

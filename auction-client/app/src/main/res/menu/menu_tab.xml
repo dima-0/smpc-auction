@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_create_auction"
+            android:title="Auktion erstellen" />
+        <item
+            android:id="@+id/nav_auctions_all"
+            android:title="Auktionsübersicht" />
+    </group>
+    <item android:title="Aktivität">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_auctions_running"
+                    android:title="Laufende Auktionen"></item>
+                <item
+                    android:id="@+id/nav_auctions_created"
+                    android:title="Eigene Auktionen"></item>
+                <item
+                    android:id="@+id/nav_auctions_finished"
+                    android:title="Abgeschlossene Auktionen"></item>
+            </group>
+        </menu>
+    </item>
+    <item android:title="Kontoverwaltung">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_account_change"
+                    android:title="Kontodaten ändern"></item>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Ausloggen"></item>
+            </group>
+        </menu>
+    </item>
+</menu>

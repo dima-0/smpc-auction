@@ -1,0 +1,7 @@
+rootProject.name='auction-client'
+
+include ':app'
+include(':fresco-auction')
+project(":fresco-auction").setProjectDir(new File("../fresco-auction"))
+include ":auction-platform"
+project(":auction-platform").setProjectDir(new File("../auction-platform"))

@@ -1,0 +1,51 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+task createJarWithDependencies(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'auctionplatform.worker.SingleWorkerMain'
+    }
+    archivesBaseName = 'auction-platform'
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    with jar
+}
+
+dependencies {
+    implementation project(':fresco-auction')
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+
+    // KryoNet
+    implementation 'com.esotericsoftware:kryonet:2.22.0-RC1'
+
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    // FRESCO
+    implementation 'dk.alexandra.fresco:core:1.2.1'
+
+    //Project Lombok
+    compileOnly "org.projectlombok:lombok:1.18.12"
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}

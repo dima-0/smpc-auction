@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Online-Auktion-App</string>
+    <string name="auction_type_sealedfirstprice">Verdeckte Erstpreisauktion</string>
+    <string name="auction_type_sealedsecondprice">Verdeckte Zweitpreisauktion</string>
+    <string name="auction_state_registration">Die Anmeldung läuft.</string>
+    <string name="auction_state_runnung">Die Anmeldung wird ausgeführt.</string>
+    <string name="auction_state_finished">Die Anmeldung ist beendet.</string>
+    <string name="auction_result_won">Gewonnen</string>
+    <string name="auction_state_lost">Verloren</string>
+    <string name="nav_drawer_open">Open</string>
+    <string name="nav_drawer_close">Close</string>
+    <string name="positiveNumbers">0123456789</string>
+</resources>
