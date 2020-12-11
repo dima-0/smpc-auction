@@ -22,9 +22,9 @@ auction-client/gradlew assembleDebug
 ```
 2. JUnit-Tests ausführen:
 ```
-fresco-auction/gradlew gradlew check
-auction-plattform/gradlew gradlew check
-auction-client/gradlew gradlew check
+fresco-auction/gradlew check
+auction-plattform/gradlew check
+auction-client/gradlew check
 ```
 ## Ausführung der Auktionsplattform (auction-plattform)
 
