@@ -15,6 +15,7 @@ Repository lokal klonen: `git clone https://github.com/dima-0/smpc-auction.git`
 ## Ausführung der JUnit-Tests (ohne IDE, mit cmd)
 
 1. Teilprojekte bauen:
+
 Das Bauen von auction-client erfordert die Datei **local.properties** (im Verzeichnis `auction-client/`), welche unter der Variable `sdk.dir` den Pfad der Android-SDK beinhaltet. Die Datei wird beim Öffnen des Projektes von Android Studio automatisch erzeugt. Es ist auch möglich, die Datei manuell zu erstellen und den Pfad der SDK zu spezifizieren.
 ```
 cd smpc-auction\fresco-auction && gradlew --build-cache assemble
