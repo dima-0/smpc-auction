@@ -32,7 +32,7 @@ Um eine ausführbare JAR-Datei der Auktionsplattform zu bauen, muss im Verzeichn
 ```
 gradlew createJarWithDependencies
 ```
-Dieser erzeugt im Verzeichnis `auction-platform/build/libs` eine JAR-Datei. Die lässt sich über die Kommandozeile auf folgende Weise ausführen: 
+Dieser erzeugt im Verzeichnis `auction-platform/build/libs` eine JAR-Datei. Diese lässt sich über die Kommandozeile auf folgende Weise ausführen: 
 ```
 java -jar auction-platform-1.0-SNAPSHOT <config_file>
 ```
