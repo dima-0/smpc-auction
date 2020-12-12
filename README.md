@@ -12,21 +12,21 @@ Das Projekt enthält eine prototypische Implementierung der Online-Auktion-App, 
 
 Repository lokal klonen: `git clone https://github.com/dima-0/smpc-auction.git`
 
-## Ausführung der JUnit-Tests (ohne IDE)
+## Ausführung der JUnit-Tests (ohne IDE, mit cmd)
 
 1. Teilprojekte bauen:
+Das Bauen von auction-client erfordert die Datei **local.properties** (im Verzeichnis `auction-client/`), welche unter der Variable `sdk.dir` den Pfad der Android-SDK beinhaltet. Die Datei wird beim Öffnen des Projektes von Android Studio automatisch erzeugt. Es ist auch möglich, die Datei manuell zu erstellen und den Pfad der SDK zu spezifizieren.
 ```
-fresco-auction/gradlew --build-cache assemble
-auction-plattform/gradlew --build-cache assemble
-auction-client/gradlew assembleDebug
+cd smpc-auction\fresco-auction && gradlew --build-cache assemble
+cd ..\auction-platform && gradlew --build-cache assemble
+cd ..\auction-client && gradlew assembleDebug
 ```
-2. JUnit-Tests ausführen:
+
+2. JUnit-Tests ausführen (im jeweiligen Projektverzeichnis):
 ```
-fresco-auction/gradlew check
-auction-plattform/gradlew check
-auction-client/gradlew check
+gradlew check
 ```
-## Ausführung der Auktionsplattform (auction-plattform)
+## Ausführung der Auktionsplattform (auction-platform)
 
 Um eine ausführbare JAR-Datei der Auktionsplattform zu bauen, muss im Verzeichnis `auction-platform/` folgender Gradle-Befehl ausgeführt werden: 
 ```
