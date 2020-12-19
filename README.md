@@ -37,7 +37,7 @@ Dieser erzeugt im Verzeichnis `auction-platform/build/libs` eine JAR-Datei. Dies
 ```
 java -jar auction-platform-1.0-SNAPSHOT <config_file>
 ```
-Als Parameter **<config_file>** muss der Pfad zur JSON-Konfigurationsdatei angegeben werden. Der Aufbau der Datei kann der Klasse `auctionplatform.worker.ServerConfiguration` entnommem werden.
+Als Parameter **<config_file>** muss der Pfad zur JSON-Konfigurationsdatei angegeben werden. Der Aufbau der Datei kann der Klasse `auctionplatform.worker.ServerConfiguration` entnommen werden.
 
 ## Ausführung der Online-Auktion-App (auction-client)
 
